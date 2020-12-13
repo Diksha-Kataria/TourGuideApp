@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tourguideapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/label">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PlayMonumentDetailActivity"
+            android:label="@string/label_one"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".PlayRestaurantDetailActivity"
+            android:label="@string/label_two"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".PlayMarketDetailActivity"
+            android:label="@string/label_three"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".PlayShoppingMallDetailActivity"
+            android:label="@string/label_four"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".PlayWaterParkDetailActivity"
+            android:label="@string/label_five"
+            android:parentActivityName=".MainActivity"></activity>
+    </application>
+
+</manifest>
